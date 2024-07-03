@@ -1,0 +1,67 @@
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+
+local Library = DarkraiX:Window("Harlen Hub V1","","",Enum.KeyCode.RightControl);
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/ButtonIJheushauuaya7Ha7auuahd-s/main/ButtonIahhwuaha7wg7wyee8"))()
+
+Tab1 = Library:Tab("scripts")
+
+Tab2 = Library:Tab("teleportes")
+
+Tab1:Button("Fly",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+Tab1:Button("Hitbox",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+end)
+
+Tab1:Button("Infinite yield",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Tab1:Button("Anti lag/Boost fps",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/BreakInHistory2IhsgeuuGa72y7syaga7/main/AntiLag"))()
+end)
+
+Tab1:Button("Infinite Jump",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/SuHusYfY-eG6Tay6GWYAU38LuckyBlocky/main/InfiniteJump"))()
+end)
+
+Tab2:Button("Base criminal",function()
+    local Players = game:GetService("Players")
+
+-- Função para teleportar o jogador para uma posição específica
+local function teleportPlayerToPosition(position)
+    local player = Players.LocalPlayer
+    local character = player.Character
+    local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+
+    if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(position)
+    end
+end
+
+-- Exemplo de uso: teleportar o jogador para a prisão
+teleportPlayerToPosition(Vector3.new(3269.076171875, 141.69888305664062, 1856.6673583984375))
+
+end)
+
+Tab2:Button("Hospital",function()
+    local Players = game:GetService("Players")
+
+-- Função para teleportar o jogador para uma posição específica
+local function teleportPlayerToPosition(position)
+    local player = Players.LocalPlayer
+    local character = player.Character
+    local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+
+    if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(position)
+    end
+end
+
+-- Exemplo de uso: teleportar o jogador para o Hospital
+teleportPlayerToPosition(Vector3.new(3269.076171875, 141.69888305664062, 1856.6673583984375))
+
+end)
